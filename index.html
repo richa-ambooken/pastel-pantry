@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Richa's Retro Recipe Café</title>
+   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+  <img src="images/logo.png" alt="Logo" />
+  <h1>Pastel Pantry
+</h1>
+</div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#recipes">Recipes</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="fancy-heading">
+      <h2 class="manilla-heading">Cooking with love, pastel whispers </h2>
+      <p>From creamy pastas to fluffy pancakes — it’s all here</p>
+      <button onclick="scrollToRecipes()">🍽 View All Recipes</button>
+    </div>
+  </header>
+
+  <section id="recipes" class="recipe-section fade-in">
+    <h2> Featured Recipes </h2>
+
+    
+    <div class="tabs">
+      <button onclick="filterRecipes('all')" class="tab active">All</button>
+      <button onclick="filterRecipes('maincourse')" class="tab">Main Course 🍚</button>
+      <button onclick="filterRecipes('biriyani')" class="tab">Biriyani 🍛</button>
+      <button onclick="filterRecipes('snacks')" class="tab">Snacks 🍟</button>
+      <button onclick="filterRecipes('dessert')" class="tab">Desserts 🍰</button>
+      <button onclick="filterRecipes('others')" class="tab">Others 🍕</button>
+    </div>
+
+    
+     <div class="recipe-cards">
+       
+      <div class="card dessert slide-in">
+        <img src="images/brownie.jpg" alt="brownie" />
+        <div class="card-content">
+          <h3>Brownie</h3>
+          <p>Category: Dessert</p>
+          <a href="recipes/brownie.html" class="card-button">View Recipe</a>
+
+
+          <div class="recipe-details hidden">
+          </div>
+        </div>
+      </div>
+
+      <div class="card biriyani slide-in">
+        <img src="images/kbiriyani.jpg" alt="kbiriyani" />
+        <div class="card-content">
+          <h3>Kozhikodan Biriyani</h3>
+          <p>Category: Biriyani</p>
+          <a href="recipes/kbiriyani.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+          </div>
+        </div>
+      </div>
+
+       <div class="card biriyani slide-in">
+        <img src="images/mabiriyani.jpg" alt="mabiriyani" />
+        <div class="card-content">
+          <h3>Malabar Chicken Biriyani</h3>
+          <p>Category: Biriyani</p>
+          <a href="recipes/mabiriyani.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="card biriyani slide-in">
+        <img src="images/mebiriyani.jpg" alt="mebiriyani" />
+        <div class="card-content">
+          <h3>Meghana Biriyani</h3>
+          <p>Category: Biriyani</p>
+          <a href="recipes/mebiriyani.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="card maincourse slide-in">
+        <img src="images/bchicken.jpg" alt="bchicken" />
+        <div class="card-content">
+          <h3>Butter Chicken</h3>
+          <p>Category: Main Course</p>
+          <a href="recipes/bchicken.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card maincourse slide-in">
+        <img src="images/bpaneer.jpg" alt="bpaneer" />
+        <div class="card-content">
+          <h3>Paneer Butter Masala</h3>
+          <p>Category: Main Course</p>
+          <a href="recipes/bpaneer.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card maincourse slide-in">
+        <img src="images/chickenrice.jpg" alt="chickenrice" />
+        <div class="card-content">
+          <h3>Chicken Rice</h3>
+          <p>Category: Main Course</p>
+          <a href="recipes/crice.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card snacks slide-in">
+        <img src="images/fries.jpg" alt="fries" />
+        <div class="card-content">
+          <h3>Loaded Fries</h3>
+          <p>Category: Snacks</p>
+          <a href="recipes/fries.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card snacks slide-in">
+        <img src="images/samosa.jpg" alt="samosa" />
+        <div class="card-content">
+          <h3>Beef Samosa</h3>
+          <p>Category: Snacks</p>
+          <a href="recipes/samosa.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card snacks slide-in">
+        <img src="images/burger.jpg" alt="burger" />
+        <div class="card-content">
+          <h3>Beef Burger</h3>
+          <p>Category: Snacks</p>
+          <a href="recipes/burger.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card dessert slide-in">
+        <img src="images/cheesecake.jpg" alt="cheesecake" />
+        <div class="card-content">
+          <h3>Burnt Basque Cheesecake</h3>
+          <p>Category: Dessert</p>
+          <a href="recipes/cheese.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card dessert slide-in">
+        <img src="images/cake.jpg" alt="cake" />
+        <div class="card-content">
+          <h3>Strawberry Shortcake</h3>
+          <p>Category: Dessert</p>
+          <a href="recipes/cake.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card others slide-in">
+        <img src="images/pizza.jpg" alt="pizza" />
+        <div class="card-content">
+          <h3>Pizza</h3>
+          <p>Category: Others</p>
+          <a href="recipes/pizza.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+      <div class="card others slide-in">
+        <img src="images/mayo.jpg" alt="mayo" />
+        <div class="card-content">
+          <h3>Mayonnaise</h3>
+          <p>Category: Others</p>
+         <a href="recipes/mayo.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Boil pasta. Make garlic cream sauce. Toss and enjoy!</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card dessert slide-in">
+        <img src="images/Pancakes.jpg" alt="Pancakes" />
+        <div class="card-content">
+          <h3>Fluffy Pancakes</h3>
+          <p>Category: Dessert</p>
+          <a href="recipes/pan.html" class="card-button">View Recipe</a>
+          <div class="recipe-details hidden">
+            <p>Mix flour, eggs, milk. Pour on pan. Flip when bubbly. Done!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<div id="recipeModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Recipe Title</h2>
+    <p id="modalDetails">Full recipe details will appear here.</p>
+  </div>
+</div>
+
+  <footer>
+    <p>© 2025 Richa’s Recipes. Made with 💕</p>
+  </footer>
+
+ <script src="js/script.js"></script>
+
+
+<div id="recipeModal" class="modal hidden">
+  <div class="modal-content">
+
+    <div class="modal-header">
+      <button class="close-btn" onclick="closeModal()">×</button>
+      <h2 id="modalTitle">Recipe Title</h2>
+    </div>
+
+    <div class="modal-body" id="modalDetails">
+     
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
