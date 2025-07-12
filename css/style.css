@@ -186,7 +186,8 @@ body {
 
 .hero {
   height: 70vh;
-  background: url('/pastel-pantry/images/Kitchen.jpg') center/cover no-repeat;
+  background: url('pastel-pantry/images
+/Kitchen.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
