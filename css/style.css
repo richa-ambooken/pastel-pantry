@@ -183,7 +183,16 @@ body {
   color: #333;
   font-weight: 500;
 }
-
+.hero {
+  height: 70vh;
+  background: url('/pastel-pantry/images/Kitchen.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.4);
+}/*
 .hero {
   height: 70vh;
   background: url('images/Kitchen.jpg') center/cover no-repeat;
@@ -198,7 +207,7 @@ body {
   text-align: center;
   color: white;
   padding: 2rem;
-}
+}*/
 
 
 .hero-content {
